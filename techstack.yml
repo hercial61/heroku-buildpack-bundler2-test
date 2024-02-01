@@ -1,0 +1,120 @@
+repo_name: hercial61/heroku-buildpack-bundler2-test
+report_id: 4b11f8e9c218f1d6d296a6a8a984ec8c
+version: 0.1
+repo_type: Public
+timestamp: '2024-02-01T18:10:41+00:00'
+requested_by: indirect
+provider: github
+branch: master
+detected_tools_count: 4
+tools:
+- name: Ruby
+  description: A dynamic, interpreted, open source programming language with a focus
+    on simplicity and productivity
+  website_url: https://www.ruby-lang.org
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/989/ruby.png
+  detection_source_url: https://github.com/hercial61/heroku-buildpack-bundler2-test
+  detection_source: Repo Metadata
+- name: Git
+  description: Fast, scalable, distributed revision control system
+  website_url: http://git-scm.com/
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Version Control System
+  image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source_url: https://github.com/hercial61/heroku-buildpack-bundler2-test
+  detection_source: Repo Metadata
+- name: RubyGems
+  description: Easily download, install, and use ruby software packages on your system
+  website_url: https://rubygems.org/
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/service/12795/5jL6-BA5_400x400.jpeg
+  detection_source_url: https://github.com/hercial61/heroku-buildpack-bundler2-test/blob/master/Gemfile
+  detection_source: Gemfile
+  last_updated_by: Andre Arko
+  last_updated_on: 2018-11-14 07:02:26.000000000 Z
+- name: rack
+  description: Rack provides a minimal, modular and adaptable interface for developing
+    web applications in Ruby
+  package_url: https://rubygems.org/rack
+  version: 2.0.6
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: RubyGems Packages
+  image_url: https://img.stackshare.io/package/18839/default_db5cfb0d85d9fd8bfb40a863581417a2a57791ab.png
+  detection_source_url: https://github.com/hercial61/heroku-buildpack-bundler2-test/blob/master/Gemfile.lock
+  detection_source: Gemfile
+  last_updated_by: Andre Arko
+  last_updated_on: 2018-11-14 07:02:26.000000000 Z
+  vulnerabilities:
+  - name: Possible shell escape sequence injection vulnerability in Rack
+    cve_id: CVE-2022-30123
+    cve_url: https://github.com/advisories/GHSA-wq4h-7r42-5hrr
+    detected_date: May 28
+    severity: critical
+    first_patched: 2.0.9.1
+  - name: Rack has possible DoS Vulnerability in Multipart MIME parsing
+    cve_id: CVE-2023-27530
+    cve_url: https://github.com/advisories/GHSA-3h57-hmj3-gj3p
+    detected_date: Mar 9
+    severity: high
+    first_patched: 2.0.9.3
+  - name: Rack allows Percent-encoded cookies to overwrite existing prefixed cookie
+      names
+    cve_id: CVE-2020-8184
+    cve_url: https://github.com/advisories/GHSA-j6w9-fv6q-3q52
+    detected_date: Aug 22
+    severity: high
+    first_patched: 2.1.4
+  - name: Denial of service via header parsing in Rack
+    cve_id: CVE-2022-44570
+    cve_url: https://github.com/advisories/GHSA-65f5-mfpf-vfhj
+    detected_date: Jan 19
+    severity: high
+    first_patched: 2.0.9.2
+  - name: Denial of Service Vulnerability in Rack Multipart Parsing
+    cve_id: CVE-2022-30122
+    cve_url: https://github.com/advisories/GHSA-hxqx-xwvh-44m2
+    detected_date: May 28
+    severity: high
+    first_patched: 2.0.9.1
+  - name: Directory traversal in Rack::Directory app bundled with Rack
+    cve_id: CVE-2020-8161
+    cve_url: https://github.com/advisories/GHSA-5f9h-9pjv-v6j7
+    detected_date: Aug 22
+    severity: high
+    first_patched: 2.1.3
+  - name: Possible Information Leak / Session Hijack Vulnerability in Rack
+    cve_id: CVE-2019-16782
+    cve_url: https://github.com/advisories/GHSA-hrqr-hxpp-chr3
+    detected_date: Aug 22
+    severity: moderate
+    first_patched: 2.0.8
+  - name: Denial of Service Vulnerability in Rack Content-Disposition parsing
+    cve_id: CVE-2022-44571
+    cve_url: https://github.com/advisories/GHSA-93pm-5p5f-3ghx
+    detected_date: Jan 19
+    severity: low
+    first_patched: 2.0.9.2
+  - name: Denial of service via multipart parsing in Rack
+    cve_id: CVE-2022-44572
+    cve_url: https://github.com/advisories/GHSA-rqv2-275x-2jq5
+    detected_date: Jan 19
+    severity: low
+    first_patched: 2.0.9.2
+  - name: Possible Denial of Service Vulnerability in Rack's header parsing
+    cve_id: CVE-2023-27539
+    cve_url: https://github.com/advisories/GHSA-c6qg-cjj8-47qp
+    detected_date: Mar 16
+    severity: low
+    first_patched: 2.2.6.4
